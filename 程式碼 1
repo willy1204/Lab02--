@@ -1,0 +1,29 @@
+const byte total =8;
+const byte LED[] = {11,10,9,8,5,4,3,2};
+int i;
+void setup()
+{
+// 將每個 Pin 設定成輸出
+  for (i=0;i<total;i++) 
+  {
+  pinMode(LED[i],OUTPUT);
+ digitalWrite(LED[i], HIGH);
+  }
+}
+void loop()  
+{
+  for (i=0;i<total;i++) //check point 1
+  {
+  digitalWrite(LED[i], LOW);
+   delay(300);
+  digitalWrite(LED[i], HIGH);
+  }
+
+  for (i=total;i>=0;i--) 
+  {
+  digitalWrite(LED[i-1], LOW);
+  delay(300);
+  digitalWrite(LED[i-1], HIGH);
+   }
+   delay(300);
+}
