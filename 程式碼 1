@@ -1,6 +1,6 @@
 const byte total =8;
 const byte LED[] = {11,10,9,8,5,4,3,2};
-int i;
+byte i;
 void setup()
 {
 // 將每個 Pin 設定成輸出
