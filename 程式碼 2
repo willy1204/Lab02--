@@ -1,6 +1,6 @@
 const byte total =8;
 const byte LED[] = {8,7,6,5,4,3,2,1};
-int i;
+byte i;
 void setup()
 {
   for (i=0;i<total;i++) 
